@@ -1,0 +1,45 @@
+ALGORITHM problem1
+VAR
+    tab1,tab2:  : ARRAY_OF integer[15];
+    sum : INTEGER;
+    i,j:INTEGER;
+    s:BOOLEAN;
+
+BEGIN
+    FOR i FROM 0 TO tab1.lenght step 1 DO;
+    WRITE(" give the elements of array 1");
+    READ(tab1[i]).
+    END FOR
+  FOR j FROM 0 TO tab2.lenght step 1 DO;
+  WRITE (" give the elements of array 2");
+  READ(tab2[j]);
+  END FOR
+  s:=false ;
+  IF (tab1[i]=tab2[j]) THEN
+  s:= true
+  write ("the elements are equal");
+  END IF
+  IF( tab1[i]<> tab2[j]) THEN
+  sum:=sum+tab1[i]
+  END IF
+   FOR j FROM 0 TO tab2.lenght step 1 DO;
+  WRITE (" give the elements of array 2");
+  READ(tab2[j]);
+   FOR i FROM 0 TO tab1.lenght step 1 DO;
+    WRITE(" give the elements of array 1");
+    READ(tab1[i])
+  END FOR
+  s:=false ;
+  IF (tab1[i]=tab2[j]) THEN
+  s:= true
+  write ("the elements are equal");
+  END IF
+  IF( tab1[i]<> tab2[j]) THEN
+  sum:=sum+tab2[j]
+  END IF
+END
+// FUNCTION function_name(parameters) : return_type
+// VAR
+
+
+ 

@@ -1,0 +1,57 @@
+FUNCTION dot_product (v1,v2:array of integer) : INTEGER
+VAR
+ dot_product(v1, v2):
+ VAR
+    if v1.lenght = v2.lenght(v2);
+       write ("Vectors must have the same dimension");
+         result = 0
+    for i from 1 to v1.lenght DO:
+        result = resulte+v1[i] * v2[i]
+   READ ( result)
+   End if
+   End for
+   End
+    
+ ALGORITHM Dot product
+ VAR
+ v1,v2:ARRAY_OF INTEGER 
+ result:INTEGER
+ i,j:INTEGER
+ BEGIN
+//  adding element
+FOR i FROM 0 TO v1.lenght STEP DO;
+ write ("add the elemnt of the array")
+ REAd(v1[i])
+END FOR 
+FOR J FROM 0 TO v2.lenght STEP DO;
+ write ("add the elemnt of the arrayv2")
+ REAd(v2[i])
+END FOR
+// FUNCTION dot_product
+// PROCEDURE dot_product
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
+result:=dot_product(v1,v2)
+IF result:=0 THEN
+  write ("V1 et V2 are not orthogonal")
+  ELSE
+   write(" v1 et v2 are orthogonal")
+   end if 
+   END
+ PROCEDURE dot_product (var:v1,v2:INTEGER)
+ VAR
+    i,result;INTEGER
+ BEGIN
+  result:=0
+  if (v1.lenght<>v2.lenght) THEN
+  write (they are not equal )
+  end if 
+  i:=0
+  REPEAT
+    result:=result+v1[i]*v2[i]
+    i:=i+1
+  UNTIL (i>v1lenght )
+ END
